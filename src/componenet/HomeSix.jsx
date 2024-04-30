@@ -6,7 +6,9 @@ import Loader from "./Loader";
 const HomeSix = () => {
     const [cards,setCard]=useState([]);
     console.log(cards);
+
     const [loading, setLoading] = useState(true);
+    
     useEffect(()=>{
            fetch('https://assingment-10-art-server.vercel.app/craft') 
            .then(res=> res.json())

@@ -38,7 +38,7 @@ const Login = () => {
         console.log(error);
         setLoading(false);
           Swal.fire({
-             title: ' Error!',
+             title: 'Error!',
                text: 'Login Error',
                icon: 'Error',
                confirmButtonText: 'Cool'

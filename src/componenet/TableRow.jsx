@@ -15,7 +15,10 @@ const TableRow = ({data,index}) => {
                 <td>{rating}</td>
                 <td>{stockStatus}</td>
                 <td>
-                    <Link to={`/view/${_id}`} >View Details</Link>
+                    <Link to={`/view/${_id}` } >
+                        {/* View Details */}
+                        <button className="btn btn-link">View Details</button>
+                        </Link>
                 </td>
             </tr>
             
