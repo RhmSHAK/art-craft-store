@@ -24,7 +24,7 @@ const Footer = () => {
           <h6 className="footer-title">CONTACT INFORMATION</h6> 
           <a className="link link-hover">456 Mirpur, Dhaka</a>
           <a className="link link-hover">+77 81 234 5678</a>
-          <a className="link link-hover">contact@exploreartcraft.com</a>
+          <a className="link link-hover">contact@art-craft.com</a>
         </nav>
         
   <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
