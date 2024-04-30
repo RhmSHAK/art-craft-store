@@ -1,6 +1,6 @@
 # Art & Craft
 
-Welcome to Artistic Expressions, where creativity knows no bounds and every stroke tells a story.
+Welcome to Art & Craft, where creativity knows no bounds and every stroke tells a story.
 
 ## Live Site URL
 (https://art-craft-e1e48.web.app)
