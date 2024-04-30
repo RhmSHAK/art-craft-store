@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 
 const Register = () => {
 
-  const {createUser,updateUserProfile,LogOut} = useContext(AuthContext);
+  const {createUser,updateUserProfile,LogOut,setLoading} = useContext(AuthContext);
   const [showPassword,setShowPassword] = useState(false);
   const [registerError,setRegisterError] = useState(' ');
 
@@ -57,6 +57,13 @@ const Register = () => {
         } )
         .catch(error => {
           console.log(error);
+          setLoading(false);
+ Swal.fire({
+  title: ' Error!',
+  text: 'Login Error',
+  icon: 'Error',
+  confirmButtonText: 'Cool'
+})
         })
 
        

@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 const Login = () => {
 
-  const {singInUser,singInGoogle,singInGithub} = useContext(AuthContext)
+  const {singInUser,singInGoogle,singInGithub,setLoading} = useContext(AuthContext)
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -36,6 +36,13 @@ const Login = () => {
       })
       .catch(error=>{
         console.log(error);
+        setLoading(false);
+          Swal.fire({
+             title: ' Error!',
+               text: 'Login Error',
+               icon: 'Error',
+               confirmButtonText: 'Cool'
+})
       })
 }
 
@@ -57,7 +64,13 @@ singInGoogle()
 })
 .catch(error=>{
   console.error(error);
-  alert(error)
+  setLoading(false);
+ Swal.fire({
+  title: ' Error!',
+  text: 'Login Error',
+  icon: 'Error',
+  confirmButtonText: 'Cool'
+})
 })
 }
 
@@ -80,10 +93,11 @@ singInGithub()
 .catch(error=>{
   console.error(error);
  // alert(error);
+ setLoading(false);
  Swal.fire({
   title: ' Error!',
   text: 'Login Error',
-  icon: 'success',
+  icon: 'Error',
   confirmButtonText: 'Cool'
 })
 })
