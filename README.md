@@ -1,4 +1,4 @@
-# Artistic Expressions
+# Art & Craft
 
 Welcome to Artistic Expressions, where creativity knows no bounds and every stroke tells a story.
 
