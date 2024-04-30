@@ -30,7 +30,7 @@ const AddArtCraftList = () => {
 
 
         //send data to the server
-        fetch('http://localhost:5000/art',{
+        fetch('https://assingment-10-art-server.vercel.app/art',{
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

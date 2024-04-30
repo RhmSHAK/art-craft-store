@@ -18,7 +18,7 @@ const MyArtCraftList = () => {
       //const[ newList, setNewList ]= useState(loaderArtList);
 
       useEffect(()=>{
-            fetch(`http://localhost:5000/art/${user?.email}`)
+            fetch(`https://assingment-10-art-server.vercel.app/art/${user?.email}`)
             .then(res=> res.json())
             .then(data=>{
                 console.log(data);

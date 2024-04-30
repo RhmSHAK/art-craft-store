@@ -6,7 +6,7 @@ const HomeSix = () => {
     const [cards,setCard]=useState([]);
     console.log(cards);
     useEffect(()=>{
-           fetch('http://localhost:5000/craft') 
+           fetch('https://assingment-10-art-server.vercel.app/craft') 
            .then(res=> res.json())
            .then(data=> setCard(data))   
     },[])

@@ -21,7 +21,7 @@ const MyArtCraft = ({list}) => {
       }).then((result) => {
         if (result.isConfirmed) {
 
-            fetch(`http://localhost:5000/art/${_id}`,{
+            fetch(`https://assingment-10-art-server.vercel.app/art/${_id}`,{
                 method: 'delete'
             })
             .then(res => res.json())

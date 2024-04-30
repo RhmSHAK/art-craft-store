@@ -34,7 +34,7 @@ const router = createBrowserRouter([
       {
         path: "/allArt",
         element: <AllArtCraft></AllArtCraft>,
-        loader: () => fetch('http://localhost:5000/art')
+        loader: () => fetch('https://assingment-10-art-server.vercel.app/art')
       },
       {
         path: "/addArt",
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       {
         path: "/myArt",
         element: <PrivetRoute><MyArtCraftList></MyArtCraftList></PrivetRoute>,
-        //loader: ({params}) => fetch(`http://localhost:5000/art/${params.email}`)
+        //loader: ({params}) => fetch(`https://assingment-10-art-server.vercel.app/art/${params.email}`)
       },
       {
         path: "/login",
@@ -58,18 +58,18 @@ const router = createBrowserRouter([
       {
         path: '/update/:id',
         element: <Update></Update>,
-        loader: ({params}) => fetch(`http://localhost:5000/list/${params.id}`)
+        loader: ({params}) => fetch(`https://assingment-10-art-server.vercel.app/list/${params.id}`)
       },
       {
         path: '/view/:id',
         element: <ViewDetails></ViewDetails>,
-        loader: ({params})=> fetch(`http://localhost:5000/list/${params.id}`)
+        loader: ({params})=> fetch(`https://assingment-10-art-server.vercel.app/list/${params.id}`)
 
       },
       {
         path:'/allList/:subCategory',
         element:<AllCategorys></AllCategorys> ,
-        loader: ({params})=>fetch(`http://localhost:5000/allCategory/${params.subCategory}`)
+        loader: ({params})=>fetch(`https://assingment-10-art-server.vercel.app/allCategory/${params.subCategory}`)
       }
     ],
   },

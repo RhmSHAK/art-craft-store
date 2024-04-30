@@ -79,7 +79,13 @@ singInGithub()
 })
 .catch(error=>{
   console.error(error);
-  alert(error);
+ // alert(error);
+ Swal.fire({
+  title: ' Error!',
+  text: 'Login Error',
+  icon: 'success',
+  confirmButtonText: 'Cool'
+})
 })
 }
 

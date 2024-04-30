@@ -8,7 +8,7 @@ const ArtCrafts = () => {
     console.log(art)
 
     useEffect(()=>{
-        fetch('http://localhost:5000/category') 
+        fetch('https://assingment-10-art-server.vercel.app/category') 
         .then(res=> res.json())
         .then(data=>{
             console.log(data) 
