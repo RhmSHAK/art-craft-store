@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const MyArtCraft = ({list}) => {
+const MyArtCraft = ({list,newList,setNewList}) => {
      //console.log(list);
     
     const {_id,subCategory,item,description,price,rating,customization,time,photo,stockStatus,name,email} = list;
@@ -34,8 +34,8 @@ const MyArtCraft = ({list}) => {
                         icon: "success"
                      });
 
-                    //  const remaining = newList.filter( list => list._id !== _id );
-                    //  setNewList(remaining);
+                      const remaining = newList.filter( list => list._id !== _id );
+                      setNewList(remaining);
                 }
             })
 

@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import {  Link, NavLink, useNavigate } from "react-router-dom";
 import 'react-tooltip/dist/react-tooltip.css'
 import { AuthContext } from "../AuthOrovider/AuthProvider";
+import Loader from "./Loader";
 //import {Tooltip as ReactTooltip} from "react-tooltip";
 //import { Tooltip } from 'react-tooltip';
 
@@ -23,7 +24,7 @@ const Navber = () => {
 
 
      if(loading){
-      return <span className="loading text-center loading-spinner loading-lg"></span>
+      return <Loader></Loader>
   }
 
    const handleToggle = e =>{
