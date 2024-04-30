@@ -20,5 +20,5 @@ At Artistic Expressions, we believe that art has the power to inspire, evoke emo
 
 ## Contact Us
 
-For inquiries, commissions, or collaborations, please reach out to us at contact@artistic-expressions.com. We look forward to hearing from you!
+For inquiries, commissions, or collaborations, please reach out to us at contact@art-craft.com. We look forward to hearing from you!
 artistic-expressions.com
